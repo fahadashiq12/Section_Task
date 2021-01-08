@@ -1,8 +1,25 @@
-.first_bg
+.first_sec
 {
     background-image: url(/Img/images.png);     
 }
 
+.sec_section
+{
+    background-image: url(/Img/AirSchool2.png);
+    height: 600px;
+    /* width: inherit; */
+}
+
+.hide_image
+{
+  background-color: white;
+  /* width: 800px; */
+  padding-left: 200px;
+  margin-top: 0px;
+  padding-top: 100px;
+  margin-left: 30px;
+  padding-top: 15px;
+}
 
 .first_img
 {
@@ -10,6 +27,10 @@
     max-height: 100%;
 }
 
+.sec_text
+{
+    display: none;
+}
 
 firstext_style
 {
@@ -17,8 +38,848 @@ firstext_style
 
 }
 
+.third_bg
+{
+  background-image: url(/Img/purple.png);
+  height: 350px;
+
+}
+
+
+.text_style
+{
+   padding-top: 130px;
+   padding-left: 70px;
+}
+
+.four_bg
+{
+  background-image: url(/Img/Back.jfif);
+  background-size: cover;
+}
+
+.card_style
+{
+  margin-left: 1px;
+  box-shadow: 20px 30px 15px black;
+  margin-top: 2rem;
+}
+
+
+
+/* .four_img
+{
+
+ background-image: url(/Img/images.png);
+
+
+} */
+
+
 .img_style
 {
     width: 40%;
     max-height: 100%;
+}
+
+
+.btn-style
+{
+ width: 30%;
+ justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 3em;
+  color: #9A12B3;
+}
+
+.letterDrop {
+  position: relative;
+  top: 0;  
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: 0.5em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop 
+{
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
+}
+
+span:nth-child(2n) 
+{
+  color: #663399;
+}
+
+@keyframes tipsy {
+    0 {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    background-color: #ffffff;
+  }
+/*   
+  a {
+    color:#663399;
+    text-shadow: 0 20px 25px  #ffffff, 0 40px 60px #663399;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  } */
+  
+  /* a:before,
+  a:after {
+    content: "";
+    padding: 0.9em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid  #663399;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  } */
+  
+  /* a:before {
+    border-color:  #663399  #663399; rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  a:after {
+    border-color: rgba(97, 49, 119, 0) rgba(108, 59, 121, 0)  #663399  #663399;
+    box-shadow: 25px 25px 25px rgba(255, 255, 255, 0.8);
+  } */
+  
+  /* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  } */
+
+  h2 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+  }
+  
+  h2 span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+
+  .txt2_style
+  {
+    margin-top: 40px;
+  }
+  
+  .message {
+    background-color: #663399;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+  body {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .container {
+    margin: auto;
+    width: 40vw;
+    height: 40vh;
+    /*outline: 1px solid red;*/
+    border: 20px solid transparent;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Open Sans","Source Sans Pro",Helvetica,sans-serif;
+    font-size: 1em;
+    letter-spacing: 1em;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animated {
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(180deg, cornflowerblue, purple 50%, cornflowerblue);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 200%;
+    background-position: 0 0, 0 100%;
+    background-origin: padding-box, border-box;
+    animation: highlight 1s infinite alternate;
+  }
+
+  @keyframes highlight {
+    100% {
+      background-position: 0 0, 0 0;
+    }
+  }
+
+
+.animated_style
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+.heading {
+  height: 100vh
+}
+
+.social-icons {
+  display: flex;
+  list-style: none
+}
+
+.social-icons li a {
+  padding: 20px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  color: #663399;
+  margin-right: 16px;
+  position: relative;
+  text-align: center;
+  line-height: 70px;
+  width: 100px;
+  height: 100px
+}
+
+
+.footer
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.social-icons li a::before,
+.social-icons li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transition: .5s linear
+}
+
+.social-icons li a:hover i {
+  transform: scale(1.1)
+}
+
+.social-icons li a:hover::before {
+  transform: skewX(20deg);
+  border-left: 3px solid;
+  border-right: 3px solid
+}
+
+.social-icons li a:hover::after {
+  transform: skewY(-25deg);
+  border-top: 3px solid;
+  border-bottom: 3px solid
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+} */
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+/* html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+} */
+
+.swiper-container {
+  width: 100%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+}
+.container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.container-general .gallery-wrap .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+}
+.container-general .gallery-wrap .item:hover {
+  flex: 7;
+}
+
+.wrap-effect-1 .item:first-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4185141/galshir-cactus-coffee.png");
+}
+.wrap-effect-1 .item:nth-of-type(2) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png");
+}
+.wrap-effect-1 .item:nth-of-type(3) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif");
+}
+.wrap-effect-1 .item:nth-of-type(4) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png");
+}
+.wrap-effect-1 .item:last-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png");
+}
+
+.wrap-effect-2 .item:hover {
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+.wrap-effect-2 .item:first-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4854597/galshir-umbrella.jpg");
+}
+.wrap-effect-2 .item:nth-of-type(2) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4776189/galshir-genesis.png");
+}
+.wrap-effect-2 .item:nth-of-type(3) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5329211/galshir-walking.gif");
+}
+.wrap-effect-2 .item:nth-of-type(4) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4611698/galshir-paper-boat.png");
+}
+.wrap-effect-2 .item:last-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4544774/galshir-window.png");
+}
+
+.wrap-effect-3 .item:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.wrap-effect-3 .item:first-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5947483/galshir-wind_2x.png");
+}
+.wrap-effect-3 .item:nth-of-type(2) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5754705/galshir-rain_2x.png");
+}
+.wrap-effect-3 .item:nth-of-type(3) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5355160/galshir-attack.gif");
+}
+.wrap-effect-3 .item:nth-of-type(4) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4742049/galshir-samurai.png");
+}
+.wrap-effect-3 .item:last-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5594777/galshir-winter-cycling_2x.jpg");
+}
+
+.wrap-effect-4 .item:hover {
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+.wrap-effect-4 .item:first-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4226693/galshir-iphone-x-lemonade.gif");
+}
+.wrap-effect-4 .item:nth-of-type(2) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4475663/galshir-musical-instruments.gif");
+}
+.wrap-effect-4 .item:nth-of-type(3) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5431797/galshir-lemonade-ring.gif");
+}
+.wrap-effect-4 .item:nth-of-type(4) {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4419736/galshir-lemonade-bike.gif");
+}
+.wrap-effect-4 .item:last-of-type {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4281500/galshir-lemonade-camera.gif");
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.inspire:after {
+  background: #38ef7d;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.inspire:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Image Accordions General
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: all 0.8s ease;
+      &:hover {
+        flex: 7;
+      }
+    }
+  }
+}
+
+// Image Accordions Effect 1
+.wrap-effect-1 {
+  .item {
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4185141/galshir-cactus-coffee.png');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
+    }
+    &:last-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png');
+    }
+  }
+}
+
+// Image Accordions Effect 2
+.wrap-effect-2 {
+  .item {
+    &:hover {
+      transform: translate3d(0, 0, 100px);
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+      filter: saturate(2) contrast(120%);
+    }
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4854597/galshir-umbrella.jpg');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4776189/galshir-genesis.png');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5329211/galshir-walking.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4611698/galshir-paper-boat.png');
+    }
+    &:last-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4544774/galshir-window.png');
+    }
+  }
+}
+
+// Image Accordions Effect 3
+.wrap-effect-3 {
+  .item {
+    &:hover {
+      animation: rotate 0.7s ease-in-out both;
+      border-radius: 10px;
+      border: 1px solid gray;
+    }
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5947483/galshir-wind_2x.png');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5754705/galshir-rain_2x.png');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5355160/galshir-attack.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4742049/galshir-samurai.png');
+    }
+    &:last-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5594777/galshir-winter-cycling_2x.jpg');
+    }
+  }
+}
+
+// Image Accordions Effect 4 
+.wrap-effect-4 {
+  .item {
+    &:hover {
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+      filter: saturate(2) contrast(120%);
+    }
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4226693/galshir-iphone-x-lemonade.gif');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4475663/galshir-musical-instruments.gif');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5431797/galshir-lemonade-ring.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4419736/galshir-lemonade-bike.gif');
+    }
+    &:last-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4281500/galshir-lemonade-camera.gif');
+    }
+  }
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration:none;
+  margin: 10px;
+  padding: 10px;
+  &:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px) {
+  ul.social-icons {
+      display: block
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1600px)
+{
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+
+  .hide_image {
+    background-color: white;
+    /* width: 800px; */
+    padding-left: 65px;
+    margin-top: 0px;
+    padding-top: 100px;
+    margin-left: 30px;
+}
+
+
+.pt-5, .py-5 {
+  padding-top: 0rem!important;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+}
+
+
+@media (min-width: 576px) and (max-width: 767px)
+{
+}
+
+
+@media (min-width: 0px) and (max-width: 575px)
+{
 }
